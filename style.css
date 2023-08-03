@@ -1,0 +1,140 @@
+/* main body*/
+body{
+margin:0px;
+}
+
+/* navbar css part */
+.navbar{
+    box-shadow: 10px 10px 100px 10px lightblue;
+    background-color:wheat;
+    display:flex;
+    height:30px;
+    width: 100vw;
+    position:sticky;
+    top:0px;
+    color:black;
+  justify-content: space-evenly;
+padding:0px;
+margin:0px;
+z-index:5;
+}
+ul{
+    list-style-type: none;
+}
+
+
+.navbar li a:hover{
+    color: black;
+
+}
+.navbar li a{
+    color:black;
+    text-decoration: none;
+
+}
+
+/*header css part*/
+header{
+    display:flex;
+    justify-content: space-between;
+  
+}
+img{
+    margin-top:10px;
+    height:50px;
+    width:50px;
+    border:solid wheat 2px;
+    border-radius:50%;
+}
+ header p{
+    margin-top:25px;
+    animation-name: mymove;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay:1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    font-style: italic;
+    color:black;
+}
+@keyframes mymove {
+    from {color:black;}
+    to {color: blue;}
+    }
+
+ /* content css part */
+ content{
+    display:flex;
+    z-index: -1;
+    justify-content: space-evenly;
+    height:100vh;
+    width:100vw;
+    background-color:white;
+    padding-bottom:10px;
+
+ }
+
+.content{
+    box-shadow: 5px 5px 10px 10px lightblue;
+    border:solid wheat 2px;
+    border-radius: 20px;
+    margin-top:50px;
+    height:250px;
+    width:300px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    
+
+}
+content div button{
+    box-shadow: 4px 4px 4px 4px lightblue;
+    height:30px;
+    width:250px;
+    border-color:wheat;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    background-color:burlywood;
+    color:black;
+}
+
+
+@media(max-width:620px){
+
+
+content{
+   display:flex;
+   flex-direction: column;
+   align-items:center;
+
+}
+content div button{
+   width:150px;
+}
+}
+
+@media(max-width:330px){
+
+}
+
+
+
+ /*footer css part */
+ .footer{ 
+    margin-top:15px;
+background-color:black ;
+display:flex;
+    height:100px;
+    width: 100vw;
+    border-top:solid rebeccapurple 3px;
+ color:aliceblue;
+ justify-content: space-evenly;
+
+
+
+ }
